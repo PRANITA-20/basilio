@@ -3,10 +3,11 @@ import RestaurantCard from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
 const Body=()=>{
-    
+    // whenever there is a change in state variable, react re-renders the component/ react triggers the reconcialation
    let [restaurants, setRestaurants]= useState([]);
-   let [allRestaurants, setAllRestaurants]= useState([]);
+   let [filteredRestaurants, setfilteredRestaurants]= useState([]);
    let [showTopRes, setShowTopRes] = useState(true);
+   let [searchText, setSearchText] =useState("");
     useEffect(()=>{
         fetchData();
     },[]);
@@ -16,17 +17,21 @@ const Body=()=>{
         'Accept':'application/json'
      }}).then((data)=>{return data.json()}).then((jsnDat)=>{
         setRestaurants(jsnDat);
-        setAllRestaurants(jsnDat);
+        setfilteredRestaurants(jsnDat);
       }
      )
+    }
+    const  searchTheTerm = ()=>{
+      let tempSearch = restaurants.filter(ele => ele.info.name.toLowerCase().includes(searchText.toLowerCase()));
+      setfilteredRestaurants(tempSearch);
     }
     const toggle = ()=>{
       setShowTopRes(!showTopRes);
       if(showTopRes){
          let tempVar= restaurants.filter(ele=>{if(ele.info.avgRating>4) return ele;});
-         setRestaurants(tempVar);
+         setfilteredRestaurants(tempVar);
       }else{
-         setRestaurants(allRestaurants);
+         setfilteredRestaurants(restaurants);
       }
     }
     if(restaurants.length===0){
@@ -35,13 +40,27 @@ const Body=()=>{
     if(restaurants.length!==0){
     return (
         <div className="body">
-          <div className="filter-container"><button className="top-rated-restaurant" onClick={()=>{
+         <div className="filters">
+         <div><button className="top-rated-restaurant" onClick={()=>{
           toggle();
          }}>Top Rated Restaurants</button></div>
+         <div>
+         <input type="text" value={searchText} onKeyDown={(e)=>{
+           if(e.key==='Enter'){
+            searchTheTerm();
+           }
+         }} onChange={(e)=>{setSearchText(e.target.value)}}></input>
+         <button type="button"  onClick={()=>{
+          searchTheTerm();
+         }}>Search</button>
+         </div>
+         </div>
+        
          <div className="restaurants-container">
             
             {   
-                restaurants.map((restaurant) =>(<RestaurantCard key={restaurant.info.id} resData={restaurant}/>))
+                filteredRestaurants.length===0 ? (<div className="no-search-results">No such results found</div>):
+                filteredRestaurants.map((restaurant) =>(<RestaurantCard key={restaurant.info.id} resData={restaurant}/>))
             }
          </div> 
         </div>

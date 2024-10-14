@@ -96,11 +96,6 @@
 .top-rated-restaurant:hover{
   color: saddlebrown;
 }
-.filter-container{
-  max-width: 1320px;
-  padding: 0 24px;
-  margin: 24px auto;
-}
 .shimmer-cards{
   width: 306px;
   height: 172px;
@@ -117,4 +112,21 @@
   padding: 64px 24px;
     max-width: 1320px;
     margin: auto;
+}
+
+.logout{
+  cursor: pointer;
+    width: 76px;
+    color: saddlebrown;
+}
+.filters{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  padding: 0 24px;
+  margin: 24px auto;
+}
+.no-search-results{
+  font-size:24px;
+  font-family: 'Gilroy';
 }
