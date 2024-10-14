@@ -130,3 +130,16 @@
   font-size:24px;
   font-family: 'Gilroy';
 }
+.nav-items>ul>li>a{
+  text-decoration: none;
+    color: black;
+}
+.nav-items>ul>li>a:hover{
+  color:saddlebrown;
+}
+.error{
+  max-width: 1320px;
+    margin: auto;
+    padding: 0 24px;
+
+}
