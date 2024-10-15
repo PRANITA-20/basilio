@@ -15,7 +15,7 @@ const RestaurantCard=(props)=>{
               <div className="rating">{data.avgRating}</div><div className="costfortwo"><span>.</span>{data.costForTwo}</div>
               </div>
               <div className="cuisines">{data.cuisines.join(', ')}</div>   
-              <div className="areaName">{data.areaName}</div>
+              <div className="areaName"><span>{data.areaName}</span><span className="loginInfo">Login to order</span></div>
              
     </div>)
    }

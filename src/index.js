@@ -3,14 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Body from './components/Body';
+import About from './components/About';
+import ContactUs from './components/ContactUs';
+import Error from './components/Error';
+const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <App />,  // AppLayout is the global wrapper that includes the Header
+      children: [
+          {
+              path: "/",
+              element: <Body />  // Landing page
+          },
+          {
+              path: "about",
+              element: <About />  // About page
+          },
+          {
+              path: "contactus",
+              element: <ContactUs />  // Contact Us page
+          }
+      ],
+      errorElement: <Error />  // Error page for undefined routes
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+  <RouterProvider router={router} />
+ 
    
   </React.StrictMode>
 );

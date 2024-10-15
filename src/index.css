@@ -155,3 +155,8 @@ button.searchInput:hover{
 .left-filters{
   display: flex;
 }
+.loginInfo{
+  float: right;
+  color:saddlebrown;
+  font-weight: 500;
+}

@@ -3,6 +3,11 @@ import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 const Header=()=>{
     const [loginBtn, setLoginBtn]=useState('Login');
+    const AuthenticateUser=()=>{
+        if(loginBtn==='Logout'){
+            
+        }
+    }
     return (
         <div className="header">
             <div className="logo-container">
@@ -25,6 +30,7 @@ const Header=()=>{
                     <li>
                        <div className='logout' onClick={()=>{
                        loginBtn==='Login'? setLoginBtn('Logout'):setLoginBtn('Login');
+                       AuthenticateUser();
                        }}>{loginBtn}</div>
                     </li>
                 </ul>
