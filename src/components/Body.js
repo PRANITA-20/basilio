@@ -1,4 +1,5 @@
 
+import { useActionData } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
@@ -8,6 +9,7 @@ const Body=()=>{
    let [filteredRestaurants, setfilteredRestaurants]= useState([]);
    let [showTopRes, setShowTopRes] = useState(true);
    let [searchText, setSearchText] =useState("");
+   let [sortedRes, setSortedRes] = useState([]);
     useEffect(()=>{
         fetchData();
     },[]);
@@ -18,9 +20,33 @@ const Body=()=>{
      }}).then((data)=>{return data.json()}).then((jsnDat)=>{
         setRestaurants(jsnDat);
         setfilteredRestaurants(jsnDat);
+        setSortedRes(jsnDat);
       }
      )
     }
+    const sortRestaurants = (e) =>{
+   let selectedValue=e.target.value;
+   let sortedResCopy = [...sortedRes]
+   if(selectedValue==='alphabetical'){
+     
+      sortedResCopy.sort((a,b)=>{
+         return a.info.name.localeCompare(b.info.name);
+      });
+      setfilteredRestaurants(sortedResCopy);
+    }
+    if(selectedValue==='highToLow'){
+      sortedResCopy.sort((a,b)=>{
+        return Number(b.info.costForTwo.slice(1,4)) - Number(a.info.costForTwo.slice(1,4))
+       });
+    setfilteredRestaurants(sortedResCopy);
+}
+if(selectedValue==='lowToHigh'){
+   sortedResCopy.sort((a,b)=>{
+     return Number(a.info.costForTwo.slice(1,4)) - Number(b.info.costForTwo.slice(1,4))
+    });
+ setfilteredRestaurants(sortedResCopy);
+}
+   }
     const  searchTheTerm = ()=>{
       let tempSearch = restaurants.filter(ele => ele.info.name.toLowerCase().includes(searchText.toLowerCase()));
       setfilteredRestaurants(tempSearch);
@@ -41,16 +67,23 @@ const Body=()=>{
     return (
         <div className="body">
          <div className="filters">
+            <div className="left-filters">
          <div><button className="top-rated-restaurant" onClick={()=>{
           toggle();
          }}>Top Rated Restaurants</button></div>
+          <div className="sort-res"><select className="sort-dropdown" onChange={(e)=>{
+            sortRestaurants(e);
+          }} id="sort-dropdown"><option defaultValue value="">Select Sorting Options</option><option value="lowToHigh">Cost for two: Low to High</option>
+          <option value="highToLow">Cost for two: High to Low</option>
+          <option value="alphabetical">Alphabetical(A-Z)</option></select></div>
+          </div>
          <div>
-         <input type="text" value={searchText} onKeyDown={(e)=>{
+         <input type="text" value={searchText} className="searchInput" onKeyDown={(e)=>{
            if(e.key==='Enter'){
             searchTheTerm();
            }
          }} onChange={(e)=>{setSearchText(e.target.value)}}></input>
-         <button type="button"  onClick={()=>{
+         <button type="button" className="searchInput"  onClick={()=>{
           searchTheTerm();
          }}>Search</button>
          </div>

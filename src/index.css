@@ -80,7 +80,7 @@
 .green-star-icon{
   margin-top:2px;
 }
-.top-rated-restaurant{
+.top-rated-restaurant, .searchInput, .sort-dropdown, .sort-dropdown>option{
   border-radius: 18px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(2, 6, 12, 0.15);
@@ -142,4 +142,16 @@
     margin: auto;
     padding: 0 24px;
 
+}
+button.searchInput{
+  margin-left: 9px;
+}
+button.searchInput:hover{
+  color: saddlebrown;
+}
+.sort-res{
+  margin-left: 9px;
+}
+.left-filters{
+  display: flex;
 }
