@@ -119,7 +119,7 @@
     width: 76px;
     color: saddlebrown;
 }
-.filters{
+.filters, .restaurantMenu{
   display: flex;
   justify-content: space-between;
   max-width: 1320px;
@@ -159,4 +159,23 @@ button.searchInput:hover{
   float: right;
   color:saddlebrown;
   font-weight: 500;
+}
+.res-menu{
+  text-decoration: none;
+  color:black;
+}
+.breadcrumbs-list{
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumbs-list a{
+  text-decoration: none;
+  color: black;
+}
+.breadcrumbs-list a:hover{
+  color: saddlebrown;
+}
+.breadcrumbs-separator{
+  margin: 0 3px;
+
 }

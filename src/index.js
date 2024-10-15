@@ -8,6 +8,7 @@ import Body from './components/Body';
 import About from './components/About';
 import ContactUs from './components/ContactUs';
 import Error from './components/Error';
+import RestaurantMenu from './components/RestaurantMenu';
 const router = createBrowserRouter([
   {
       path: "/",
@@ -24,7 +25,10 @@ const router = createBrowserRouter([
           {
               path: "contactus",
               element: <ContactUs />  // Contact Us page
-          }
+          },{
+            path: "restaurants/:resId",
+            element: <RestaurantMenu />
+          },
       ],
       errorElement: <Error />  // Error page for undefined routes
   }

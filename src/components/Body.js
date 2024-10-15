@@ -2,6 +2,7 @@
 import RestaurantCard from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 const Body=()=>{
     // whenever there is a change in state variable, react re-renders the component/ react triggers the reconcialation
    let [restaurants, setRestaurants]= useState([]);
@@ -92,7 +93,7 @@ if(selectedValue==='lowToHigh'){
             
             {   
                 filteredRestaurants.length===0 ? (<div className="no-search-results">No such results found</div>):
-                filteredRestaurants.map((restaurant) =>(<RestaurantCard key={restaurant.info.id} resData={restaurant}/>))
+                filteredRestaurants.map((restaurant) =>(<Link className="res-menu" to={'restaurants/'+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>))
             }
          </div> 
         </div>
