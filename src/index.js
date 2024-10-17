@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -9,6 +9,7 @@ import About from './components/About';
 import ContactUs from './components/ContactUs';
 import Error from './components/Error';
 import RestaurantMenu from './components/RestaurantMenu';
+const Instamart = lazy(()=>import('./components/Instamart/Instamart'));
 const router = createBrowserRouter([
   {
       path: "/",
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
           },{
             path: "restaurants/:resId",
             element: <RestaurantMenu />
+          },
+          {
+            path: "instamart",
+            element:<Suspense fallback={<div>Loading...</div>}><Instamart/></Suspense>
           },
       ],
       errorElement: <Error />  // Error page for undefined routes

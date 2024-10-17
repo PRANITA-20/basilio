@@ -1,24 +1,14 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
 import { Shimmer } from "./Shimmer";
+import useRestaurantInfo from "../utils/Custom-Hooks/useRestaurantInfo";
 
 const RestaurantMenu = ()=>{
     const {resId} = useParams();
-    const [restaurantSelected, setRestaurantSelected] = useState({});
-    let selectedRestaurant=[];
- useEffect(()=>{
-    fetch('/mockData.json',{headers:{
-        'Content-type': 'application/json',
-        'Accept':'application/json'
-     }}).then((data)=>{return data.json()}).then((jsnDat)=>{
-      selectedRestaurant = jsnDat.filter(ele =>Number(ele.info.id) === Number(resId));  
-      setRestaurantSelected(selectedRestaurant[0].info);
-        }
-     )
- },[])
 
-if(!restaurantSelected){
+    const resInfo = useRestaurantInfo(resId);
+
+if(!resInfo){
     return <Shimmer/>
 }
 return (
@@ -28,7 +18,7 @@ return (
             <ul className="breadcrumbs-list">
                 <li><Link to='/'>Home</Link></li>
                 <li className="breadcrumbs-separator">/</li>
-                <li><Link to={'/restaurants/'+restaurantSelected.id}>{restaurantSelected.name}</Link></li>
+                <li><Link to={'/restaurants/'+resInfo.id}>{resInfo.name}</Link></li>
             </ul>
         </div>
     </div>

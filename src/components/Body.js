@@ -1,4 +1,5 @@
 
+import useOnlineStatus from "../utils/Custom-Hooks/useOnlineStatus";
 import RestaurantCard from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
@@ -60,8 +61,12 @@ if(selectedValue==='lowToHigh'){
          setfilteredRestaurants(restaurants);
       }
     }
+    const networkStatus = useOnlineStatus();
+    if(!networkStatus){
+      return (<h3 className="offline-message">Looks like you are offline. Please check your network connectivity!</h3>)
+    }
     if(restaurants.length===0){
-      return <Shimmer/>
+       return <Shimmer/>
     }
     if(restaurants.length!==0){
     return (

@@ -7,7 +7,13 @@
   margin: auto;
   max-width: 1320px;
 }
-
+.About, .offline-message, .shimmer-for-about{
+  padding: 10px 24px;
+  margin: auto;
+  max-width: 1320px;
+  font-family: 'Gilroy';
+  font-size: 24px;
+}
 .nav-items{
   display: flex;
   justify-content: space-around;
@@ -102,6 +108,19 @@
   background-color: rgb(204, 199, 199);
   
 }
+.shimmerforabout-heading{
+  height: 20px;
+  width: 30%;
+  background-color: rgb(204, 199, 199);
+  margin-bottom: 24px;
+}
+
+.shimmerforabout-card{
+  height: 200px;
+  width:100%;
+  text-align: left;
+  background-color: rgb(204, 199, 199);
+}
 .shimmer-cards:not(:nth-child(9)), .shimmer-cards:not(:nth-child(10)),.shimmer-cards:not(:nth-child(11)),.shimmer-cards:not(:nth-child(12)){
   margin-bottom: 24px;
 }
@@ -178,4 +197,14 @@ button.searchInput:hover{
 .breadcrumbs-separator{
   margin: 0 3px;
 
+}
+.company-details>p:not(:last-child){
+  margin-bottom:24px;
+}
+.company-details{
+    padding: 24px;
+    box-shadow: 5px 5px 100px 1px lightgrey;
+}
+.founder-details{
+  margin-top: 64px;
 }

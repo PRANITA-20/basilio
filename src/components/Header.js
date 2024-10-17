@@ -28,6 +28,9 @@ const Header=()=>{
                         Cart
                     </li>
                     <li>
+                        <NavLink to="/instamart">Instamart</NavLink>
+                    </li>
+                    <li>
                        <div className='logout' onClick={()=>{
                        loginBtn==='Login'? setLoginBtn('Logout'):setLoginBtn('Login');
                        AuthenticateUser();
