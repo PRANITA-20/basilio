@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
 import useRestaurantInfo from "../utils/Custom-Hooks/useRestaurantInfo";
 import { ShimmerForAbout } from "./ShimmerForAbout";
+import RestaurantCategory from "./RestaurantCategory";
 
 const RestaurantMenu = ()=>{
     const {resId} = useParams();
@@ -54,6 +55,9 @@ return (
             <div className="font-weight font-family-Gilroy font-14">{resInfo.deliveryTime}</div>
         </div>
         </div>
+        </div>
+        <div className="food-items-list">
+           <RestaurantCategory/>
         </div>
     </div>
     </>

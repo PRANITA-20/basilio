@@ -86,8 +86,14 @@
 .border-radius-20{
   border-radius: 20%;
 }
+.border-radius-36{
+  border-radius: 36px;
+}
 .mb-24{
   margin-bottom: 24px;
+}
+.mt-24{
+  margin-top: 24px;
 }
 .max-width-768{
   max-width: 768px;
@@ -279,6 +285,12 @@ button.searchInput:hover{
 }
 .sort-res{
   margin-left: 9px;
+}
+/* Styles for restaurant category component */
+.res-category{
+  padding: 24px 17px;
+  box-shadow: 5px 5px 100px 1px lightgrey;
+
 }
 /* common */
 .About, .offline-message, .shimmer-for-about{
