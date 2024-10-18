@@ -4,8 +4,10 @@
   --text-color1 : saddlebrown;
   --text-color2: black;
   --text-color3:  rgba(2, 6, 12, 0.6);
+  --text-color4: white;
   --bg-color1: rgb(255, 255, 255);
   --bg-color2: rgba(2, 6, 12, 0.15);
+  --bg-color3: rgb(204, 199, 199);
 }
 /* -------------------------------------------------- */
 /* Common classes */
@@ -57,7 +59,14 @@
 }
 
 .shimmer-bg{
-  background-color: rgb(204, 199, 199);
+  background-color: var(--bg-color3);
+}
+.bg-black{
+  background-color: var(--text-color2);
+  color: var(--text-color4)
+}
+.p-8{
+  padding:8px;
 }
 .px-24{
   padding: 0 24px;
@@ -82,6 +91,12 @@
 }
 .max-width-768{
   max-width: 768px;
+}
+.border-radius-6{
+  border-radius: 6px;
+}
+.float-right{
+  float: right;
 }
 /* ---------------------------------------------------------------------- */
 /* Styles for Header */
@@ -148,11 +163,6 @@ padding: 7px;
     position: absolute;
     background: black;
     color: white;
-    border-top-radius: 20px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
     z-index: 2;
     top: 24px;
 }

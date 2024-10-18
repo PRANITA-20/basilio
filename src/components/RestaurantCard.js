@@ -24,7 +24,7 @@ const RestaurantCard=(props)=>{
      return  (resData)=>{
       return (
       <>
-      <label className="promoted">Promoted</label>
+      <label className="promoted border-radius-6">Promoted</label>
        <RestaurantCard {...resData} /> 
       </>)
      }

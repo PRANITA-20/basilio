@@ -33,7 +33,7 @@ return (
             </ul>
         </div>
         <div style={marginBottom} className="restaurant-name font-family-Gilroy font-24">
-            {resInfo.name}
+            {resInfo.name} <span>{resInfo.promoted ? (<span className="float-right font-14 p-8 bg-black border-radius-6">Promoted</span>) : ''}</span>
         </div>
         <div className="restaurantMenu-card">
             <div className="flex font-16 font-family-Gilroy font-weight">
