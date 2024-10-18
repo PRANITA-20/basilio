@@ -63,7 +63,7 @@ if(selectedValue==='lowToHigh'){
     }
     const networkStatus = useOnlineStatus();
     if(!networkStatus){
-      return (<h3 className="offline-message">Looks like you are offline. Please check your network connectivity!</h3>)
+      return (<h3 className="offline-message font-24 margin-auto max-width-1320 font-family-Gilroy">Looks like you are offline. Please check your network connectivity!</h3>)
     }
     if(restaurants.length===0){
        return <Shimmer/>
@@ -71,8 +71,8 @@ if(selectedValue==='lowToHigh'){
     if(restaurants.length!==0){
     return (
         <div className="body">
-         <div className="filters">
-            <div className="left-filters">
+         <div className="filters space-between px-24 max-width-1320 flex">
+            <div className="flex">
          <div><button className="top-rated-restaurant" onClick={()=>{
           toggle();
          }}>Top Rated Restaurants</button></div>
@@ -94,11 +94,11 @@ if(selectedValue==='lowToHigh'){
          </div>
          </div>
         
-         <div className="restaurants-container">
+         <div className="restaurants-container align-items-start px-24 list-style-none margin-auto max-width-1320 grid">
             
             {   
-                filteredRestaurants.length===0 ? (<div className="no-search-results">No such results found</div>):
-                filteredRestaurants.map((restaurant) =>(<Link className="res-menu" to={'restaurants/'+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>))
+                filteredRestaurants.length===0 ? (<div className="no-search-results font-24 font-family-Gilroy">No such results found</div>):
+                filteredRestaurants.map((restaurant) =>(<Link className="res-menu text-color-decoration" to={'restaurants/'+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>))
             }
          </div> 
         </div>

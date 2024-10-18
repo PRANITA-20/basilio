@@ -4,7 +4,7 @@ const Error=()=>{
    const err= useRouteError();
     return (
         <><Header/>
-        <div className="error">
+        <div className="error px-24 margin-auto max-width-1320">
             <h2>{err.status}: Page not found!</h2>
         </div>
         </>

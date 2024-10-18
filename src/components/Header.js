@@ -9,26 +9,26 @@ const Header=()=>{
         }
     }
     return (
-        <div className="header">
+        <div className="header space-between flex margin-auto max-width-1320">
             <div className="logo-container">
                 <img className="log" src={logo}/>
             </div>
-            <div className="nav-items">
-                <ul>
+            <div className="nav-items align-items-center space-around flex font-family-Gilroy">
+                <ul className='flex font-24 list-style-none'>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink className="text-color-decoration" to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About Us</NavLink>
+                        <NavLink className="text-color-decoration" to="/about">About Us</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contactus">Contact Us</NavLink>
+                        <NavLink className="text-color-decoration" to="/contactus">Contact Us</NavLink>
                     </li>
                     <li>
                         Cart
                     </li>
                     <li>
-                        <NavLink to="/instamart">Instamart</NavLink>
+                        <NavLink className="text-color-decoration" to="/instamart">Instamart</NavLink>
                     </li>
                     <li>
                        <div className='logout' onClick={()=>{

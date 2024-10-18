@@ -1,68 +1,93 @@
 
-
-.header{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 24px;
+/* CSS Variables */
+:root{
+  --text-color1 : saddlebrown;
+  --text-color2: black;
+  --text-color3:  rgba(2, 6, 12, 0.6);
+  --bg-color1: rgb(255, 255, 255);
+  --bg-color2: rgba(2, 6, 12, 0.15);
+}
+/* -------------------------------------------------- */
+/* Common classes */
+.margin-auto{
   margin: auto;
+}
+.max-width-1320{
   max-width: 1320px;
 }
-.About, .offline-message, .shimmer-for-about{
-  padding: 10px 24px;
-  margin: auto;
-  max-width: 1320px;
+.flex{
+  display: flex;
+}
+.font-family-Gilroy{
   font-family: 'Gilroy';
+}
+.grid{
+  display: grid;
+}
+.font-24{
   font-size: 24px;
 }
-.nav-items{
-  display: flex;
-  justify-content: space-around;
-  font-family: 'Gilroy';
+.list-style-none{
+  list-style-type: none;
+}
+.text-color-decoration{
+  text-decoration: none;
+  color:var(--text-color2);
+}
+.shimmer-bg{
+  background-color: rgb(204, 199, 199);
+}
+.px-24{
+  padding: 0 24px;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-between;
+}
+.align-items-center{
   align-items: center;
 }
+.align-items-start{
+  align-items: start;
+}
+.border-radius-20{
+  border-radius: 20%;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+/* ---------------------------------------------------------------------- */
+/* Styles for Header */
+.header{
+  padding: 10px 24px;
+}
 .nav-items>ul{
-  list-style-type: none;
   padding: 0;
-  display:flex;
 }
 .nav-items>ul>li{
   text-align: right;
-  font-size: 24px;
   margin-left: 20px;
+}
+.nav-items>ul>li>a:hover{
+  color:var(--text-color1);
 }
 .log{
   max-width: 116px;
 }
-.restaurants-container{
-  padding: 0 24px;
-  list-style: none;
-  margin-block-end: 0px;
-  display: grid;
-  -webkit-box-align: start;
-  align-items: start;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  max-width: 1320px;
-  margin: auto;
+.logout{
+  cursor: pointer;
+    width: 76px;
+    color:var(--text-color1);
 }
-.restaurant-details{
-  display: grid;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-top: 2px;
-  gap: 2px;
-  grid-auto-flow: column;
-  -webkit-box-pack: start;
-  justify-content: start;
-  font-family: 'Gilroy';
-}
+/* Styles for the restaurant card component*/
 .cuisines, .areaName{
-  font-family: 'Gilroy';
   font-weight: 200;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.3px;
-  color: rgba(2, 6, 12, 0.6);
+  color:var(--text-color3);
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
@@ -73,7 +98,6 @@
 .res-image{
   max-width: 100%;
   aspect-ratio: 16/9;
-  border-radius: 20%;
   
 }
 .res-image:hover{
@@ -81,15 +105,84 @@
 }
 .restaurant-image{
   overflow: hidden;
-  border-radius: 20%;
 }
 .green-star-icon{
   margin-top:2px;
 }
+
+.filters, .restaurantMenu{
+  margin: 24px auto;
+}
+.loginInfo{
+  float: right;
+  color:var(--text-color1);
+  font-weight: 500;
+}
+/* Styles for restaurant menu component */
+.breadcrumbs-list a:hover{
+  color:var(--text-color1);
+}
+.breadcrumbs-separator{
+  margin: 0 3px;
+
+}
+/* ------------------------------------------------- */
+/* Styles for company class component */
+.company-details>p:not(:last-child){
+  margin-bottom: 24px;
+}
+.company-details{
+    padding: 24px;
+    box-shadow: 5px 5px 100px 1px lightgrey;
+}
+.founder-details{
+  margin-top: 64px;
+}
+/*---------------------------------------------------- */
+/* Styles for ShimmerForAbout component */
+.shimmerforabout-heading{
+  height: 20px;
+  width: 30%;
+}
+
+.shimmerforabout-card{
+  height: 200px;
+  width:100%;
+  text-align: left;
+}
+/* -------------------------------------------------------- */
+/* Styles for shimmer cards */
+.shimmer-cards{
+  width: 306px;
+  height: 172px;  
+}
+.shimmer-cards:not(:nth-child(9)), .shimmer-cards:not(:nth-child(10)),
+.shimmer-cards:not(:nth-child(11)),.shimmer-cards:not(:nth-child(12)){
+  margin-bottom: 24px;
+}
+.shimmer-container{
+  flex-wrap: wrap;
+  padding: 64px 24px;
+}
+/* ------------------------------------------------------------- */
+/* Styles for Body component */
+.restaurants-container{
+  margin-block-end: 0px;
+  -webkit-box-align: start;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.restaurant-details{
+  margin-top: 2px;
+  gap: 2px;
+  grid-auto-flow: column;
+  -webkit-box-pack: start;
+  justify-content: start;
+}
 .top-rated-restaurant, .searchInput, .sort-dropdown, .sort-dropdown>option{
   border-radius: 18px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(2, 6, 12, 0.15);
+  background-color: var(--bg-color1);
+  border: 1px solid var(--bg-color2);
   padding: 9px 12px;
   display: inline-grid;
   width: max-content;
@@ -100,111 +193,18 @@
   cursor: pointer;
 }
 .top-rated-restaurant:hover{
-  color: saddlebrown;
-}
-.shimmer-cards{
-  width: 306px;
-  height: 172px;
-  background-color: rgb(204, 199, 199);
-  
-}
-.shimmerforabout-heading{
-  height: 20px;
-  width: 30%;
-  background-color: rgb(204, 199, 199);
-  margin-bottom: 24px;
-}
-
-.shimmerforabout-card{
-  height: 200px;
-  width:100%;
-  text-align: left;
-  background-color: rgb(204, 199, 199);
-}
-.shimmer-cards:not(:nth-child(9)), .shimmer-cards:not(:nth-child(10)),.shimmer-cards:not(:nth-child(11)),.shimmer-cards:not(:nth-child(12)){
-  margin-bottom: 24px;
-}
-.shimmer-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 64px 24px;
-    max-width: 1320px;
-    margin: auto;
-}
-
-.logout{
-  cursor: pointer;
-    width: 76px;
-    color: saddlebrown;
-}
-.filters, .restaurantMenu{
-  display: flex;
-  justify-content: space-between;
-  max-width: 1320px;
-  padding: 0 24px;
-  margin: 24px auto;
-}
-.no-search-results{
-  font-size:24px;
-  font-family: 'Gilroy';
-}
-.nav-items>ul>li>a{
-  text-decoration: none;
-    color: black;
-}
-.nav-items>ul>li>a:hover{
-  color:saddlebrown;
-}
-.error{
-  max-width: 1320px;
-    margin: auto;
-    padding: 0 24px;
-
+  color:var(--text-color1);
 }
 button.searchInput{
   margin-left: 9px;
 }
 button.searchInput:hover{
-  color: saddlebrown;
+  color:var(--text-color1);
 }
 .sort-res{
   margin-left: 9px;
 }
-.left-filters{
-  display: flex;
-}
-.loginInfo{
-  float: right;
-  color:saddlebrown;
-  font-weight: 500;
-}
-.res-menu{
-  text-decoration: none;
-  color:black;
-}
-.breadcrumbs-list{
-  display: flex;
-  list-style-type: none;
-}
-.breadcrumbs-list a{
-  text-decoration: none;
-  color: black;
-}
-.breadcrumbs-list a:hover{
-  color: saddlebrown;
-}
-.breadcrumbs-separator{
-  margin: 0 3px;
-
-}
-.company-details>p:not(:last-child){
-  margin-bottom:24px;
-}
-.company-details{
-    padding: 24px;
-    box-shadow: 5px 5px 100px 1px lightgrey;
-}
-.founder-details{
-  margin-top: 64px;
+/* common */
+.About, .offline-message, .shimmer-for-about{
+  padding: 10px 24px;
 }

@@ -13,12 +13,12 @@ if(!resInfo){
 }
 return (
     <>
-    <div className="restaurantMenu">
+    <div className="restaurantMenu space-between px-24 max-width-1320 flex">
         <div className="breadcrumbs">
-            <ul className="breadcrumbs-list">
-                <li><Link to='/'>Home</Link></li>
+            <ul className="breadcrumbs-list list-style-none flex">
+                <li><Link className="text-color-decoration" to='/'>Home</Link></li>
                 <li className="breadcrumbs-separator">/</li>
-                <li><Link to={'/restaurants/'+resInfo.id}>{resInfo.name}</Link></li>
+                <li><Link className="text-color-decoration" to={'/restaurants/'+resInfo.id}>{resInfo.name}</Link></li>
             </ul>
         </div>
     </div>

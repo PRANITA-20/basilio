@@ -21,7 +21,7 @@ const About=()=>{
         return <ShimmerForAbout/>
     }
     return (
-        <div className="About">
+        <div className="About margin-auto max-width-1320 font-family-Gilroy font-24">
             <h1>About Us</h1>
             <CompanyClass companydetail={about}/>
         </div>
