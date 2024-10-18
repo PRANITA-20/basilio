@@ -18,14 +18,35 @@
 .flex{
   display: flex;
 }
+.flex-direction-col{
+  flex-direction: column;
+}
 .font-family-Gilroy{
   font-family: 'Gilroy';
 }
 .grid{
   display: grid;
 }
+.font-14{
+  font-size: 14px;
+}
+.font-16{
+  font-size: 16px;
+}
 .font-24{
   font-size: 24px;
+}
+.font-weight{
+  font-weight: bold;
+}
+.mx-8{
+  margin:0 8px;
+}
+.ml-12{
+  margin-left:12px;
+}
+.mt-20{
+  margin-top:20px;
 }
 .list-style-none{
   list-style-type: none;
@@ -34,6 +55,7 @@
   text-decoration: none;
   color:var(--text-color2);
 }
+
 .shimmer-bg{
   background-color: rgb(204, 199, 199);
 }
@@ -57,6 +79,9 @@
 }
 .mb-24{
   margin-bottom: 24px;
+}
+.max-width-768{
+  max-width: 768px;
 }
 /* ---------------------------------------------------------------------- */
 /* Styles for Header */
@@ -119,12 +144,37 @@
   font-weight: 500;
 }
 /* Styles for restaurant menu component */
+.breadcrumbs-list{
+  padding-left: 0;
+}
 .breadcrumbs-list a:hover{
   color:var(--text-color1);
 }
 .breadcrumbs-separator{
   margin: 0 3px;
-
+}
+.restaurantMenu-card{
+  background: linear-gradient(rgb(255, 255, 255) -6.71%, rgb(235, 235, 242) 56.19%, rgb(223, 223, 231) 106.56%);
+    padding: 24px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+.restaurantMenu-cuisines{
+  color: var(--text-color1);
+}
+.starting-point, .ending-point{
+  width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(196, 196, 196);
+}
+.mid-point{
+  width: 1px;
+    height: 23px;
+    background: rgb(196, 196, 196);
+}
+.outlet-location{
+  margin-bottom: 8px;
 }
 /* ------------------------------------------------- */
 /* Styles for company class component */

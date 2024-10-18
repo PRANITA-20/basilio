@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+
 const Body=()=>{
     // whenever there is a change in state variable, react re-renders the component/ react triggers the reconcialation
    let [restaurants, setRestaurants]= useState([]);

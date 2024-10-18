@@ -5,6 +5,7 @@
         "name": "FreshMenu",
         "image": "https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg",
         "locality": "EJIPURA",
+        "deliveryTime": "35mins",
         "areaName": "Koramangala",
         "costForTwo": "₹250 for two",
         "cuisines": [
@@ -17,7 +18,8 @@
           "Indian",
           "Desserts"
         ],
-        "avgRating": 3.5
+        "avgRating": 3.5,
+        "noOfRatings": "4.4K+"
       }
     },
     {
@@ -27,6 +29,7 @@
         "image":"https://www.themealdb.com/images/media/meals/vwrpps1503068729.jpg",
         "locality": "1st Block",
         "areaName": "Koramangala",
+        "deliveryTime": "40mins",
         "costForTwo": "₹350 for two",
         "cuisines": [
           "Salads",
@@ -34,8 +37,9 @@
           "Desserts",
           "Beverages"
         ],
-        "avgRating": 3.8}
-      
+        "avgRating": 3.8,
+        "noOfRatings": "2.4K+"}
+        
     },
     {
       "info": {
@@ -44,6 +48,7 @@
         "locality": "5th Block",
         "image": "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg",
         "areaName": "Koramangala",
+        "deliveryTime": "55mins",
         "costForTwo": "₹400 for two",
         "cuisines": [
           "Burgers",
@@ -51,7 +56,8 @@
           "Cafe",
           "Desserts"
         ],
-        "avgRating": 4
+        "avgRating": 4,
+        "noOfRatings": "1.4K+"
       }
     },
     {
@@ -61,6 +67,7 @@
         "image": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
         "locality": "Chikka Lakshmaiah Layout",
         "areaName": "Adugodi",
+        "deliveryTime": "23mins",
         "costForTwo": "₹250 for two",
         "cuisines": [
           "North Indian",
@@ -68,7 +75,8 @@
           "Tibetan",
           "Desserts"
         ],
-        "avgRating": 2.9
+        "avgRating": 2.9,
+        "noOfRatings": "2K+"
       }
     },
     {
@@ -78,13 +86,15 @@
         "image":"https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg",
         "locality": "7th Block",
         "areaName": "Koramangla",
+        "deliveryTime": "33mins",
         "costForTwo": "₹400 for two",
         "cuisines": [
           "Burgers",
           "Fast Food",
           "Rolls & Wraps"
         ],
-        "avgRating": 3.6
+        "avgRating": 3.6,
+        "noOfRatings": "50+"
       }
     },
     {
@@ -94,6 +104,7 @@
         "image":"https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg",
         "locality": "Jakkasandra",
         "areaName": "Koramangala",
+        "deliveryTime": "50mins",
         "costForTwo": "₹300 for two",
         "cuisines": [
           "Biryani",
@@ -123,7 +134,8 @@
           "Sweets",
           "Thai"
         ],
-        "avgRating": 2.4
+        "avgRating": 2.4,
+        "noOfRatings": "2.8K+"
       }
     },
     {
@@ -134,6 +146,7 @@
         "image":"https://www.themealdb.com/images/media/meals/1529444113.jpg",
         "locality": "6TH BLOCK",
         "areaName": "Koramangala",
+        "deliveryTime": "35mins",
         "costForTwo": "₹200 for two",
         "cuisines": [
           "North Indian",
@@ -142,128 +155,8 @@
           "Home Food"
         ],
         "avgRating": 4.5,
-        "parentId": "10655",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "4.8K+",
-        "sla": {
-          "deliveryTime": 15,
-          "lastMileTravel": 0.8,
-          "serviceability": "SERVICEABLE",
-          "slaString": "10-20 mins",
-          "lastMileTravelString": "0.8 km",
-          "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-          "nextCloseTime": "2024-10-08 02:00:00",
-          "opened": true
-        },
-        "badges": {
-          "imageBadges": [
-            {
-              "imageId": "Green%20Dot%20Awards/Best%20In%20Paneer.png",
-              "description": "Delivery!"
-            }
-          ],
-          "textExtendedBadges": [
-            {
-              "iconId": "guiltfree/GF_Logo_android_3x",
-              "shortDescription": "options available",
-              "fontColor": "#7E808C"
-            }
-          ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-          "entityBadges": {
-            "imageBased": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "Delivery!",
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Paneer.png"
-                  }
-                }
-              ]
-            },
-            "textBased": {
-              
-            },
-            "textExtendedBadges": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "",
-                    "fontColor": "#7E808C",
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "options available"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "aggregatedDiscountInfoV3": {
-          "header": "₹125 OFF",
-          "subHeader": "ABOVE ₹299",
-          "discountTag": "FLAT DEAL"
-        },
-        "loyaltyDiscoverPresentationInfo": {
-          "logoCtx": {
-            "text": "BENEFITS",
-            "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
-          },
-          "freedelMessage": "FREE DELIVERY"
-        },
-        "orderabilityCommunication": {
-          "title": {
-            
-          },
-          "subTitle": {
-            
-          },
-          "message": {
-            
-          },
-          "customIcon": {
-            
-          }
-        },
-        "differentiatedUi": {
-          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          "differentiatedUiMediaDetails": {
-            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-            "lottie": {
-              
-            },
-            "video": {
-              
-            }
-          }
-        },
-        "reviewsSummary": {
-          
-        },
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {
-          
-        },
-        "externalRatings": {
-          "aggregatedRating": {
-            "rating": "--"
-          }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-      },
-      "analytics": {
-        "context": "seo-data-95809c5f-a556-4352-b233-4e42b7659341"
-      },
-      "cta": {
-        "link": "https://www.swiggy.com/city/bangalore/box8-desi-meals-6th-block-koramangala-rest289266",
-        "text": "RESTAURANT_MENU",
-        "type": "WEBLINK"
-      },
-      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        "noOfRatings": "10K+"
+        }
     },
     {
       "info": {
@@ -273,6 +166,7 @@
         "image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
         "locality": "The Nexus Mall",
         "areaName": "Koramangala",
+        "deliveryTime": "25mins",
         "costForTwo": "₹350 for two",
         "cuisines": [
           "Desserts",
@@ -280,147 +174,8 @@
           "Beverages"
         ],
         "avgRating": 4.6,
-        "parentId": "3506",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "3.2K+",
-        "sla": {
-          "deliveryTime": 24,
-          "lastMileTravel": 2.2,
-          "serviceability": "SERVICEABLE",
-          "slaString": "20-25 mins",
-          "lastMileTravelString": "2.2 km",
-          "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-          "nextCloseTime": "2024-10-07 23:00:00",
-          "opened": true
-        },
-        "badges": {
-          "imageBadges": [
-            {
-              "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png",
-              "description": "Delivery!"
-            },
-            {
-              "imageId": "Rxawards/_CATEGORY-Desserts.png",
-              "description": "Delivery!"
-            },
-            {
-              "imageId": "newg.png",
-              "description": "Gourmet"
-            }
-          ],
-          "textExtendedBadges": [
-            {
-              "iconId": "guiltfree/GF_Logo_android_3x",
-              "shortDescription": "options available",
-              "fontColor": "#7E808C"
-            }
-          ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-          "entityBadges": {
-            "imageBased": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "Delivery!",
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png"
-                  }
-                },
-                {
-                  "attributes": {
-                    "description": "Delivery!",
-                    "imageId": "Rxawards/_CATEGORY-Desserts.png"
-                  }
-                },
-                {
-                  "attributes": {
-                    "description": "Gourmet",
-                    "imageId": "newg.png"
-                  }
-                }
-              ]
-            },
-            "textBased": {
-              
-            },
-            "textExtendedBadges": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "",
-                    "fontColor": "#7E808C",
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "options available"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "aggregatedDiscountInfoV3": {
-          "header": "50% OFF",
-          "subHeader": "UPTO ₹100"
-        },
-        "loyaltyDiscoverPresentationInfo": {
-          "logoCtx": {
-            "text": "BENEFITS",
-            "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
-          },
-          "freedelMessage": "FREE DELIVERY"
-        },
-        "orderabilityCommunication": {
-          "title": {
-            
-          },
-          "subTitle": {
-            
-          },
-          "message": {
-            
-          },
-          "customIcon": {
-            
-          }
-        },
-        "differentiatedUi": {
-          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          "differentiatedUiMediaDetails": {
-            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-            "lottie": {
-              
-            },
-            "video": {
-              
-            }
-          }
-        },
-        "reviewsSummary": {
-          
-        },
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {
-          
-        },
-        "externalRatings": {
-          "aggregatedRating": {
-            "rating": "--"
-          }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-      },
-      "analytics": {
-        "context": "seo-data-95809c5f-a556-4352-b233-4e42b7659341"
-      },
-      "cta": {
-        "link": "https://www.swiggy.com/city/bangalore/smoor-the-nexus-mall-koramangala-rest1053",
-        "text": "RESTAURANT_MENU",
-        "type": "WEBLINK"
-      },
-      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        "noOfRatings": "3K+"
+      }
     },
     {
       "info": {
@@ -429,6 +184,7 @@
         "cloudinaryImageId": "whfviizdgvwg0uwfk8dy",
         "locality": "Koramangala",
         "areaName": "Koramangala",
+        "deliveryTime": "30mins",
         "image":"https://www.themealdb.com/images/media/meals/ruwpww1511817242.jpg",
         "costForTwo": "₹500 for two",
         "cuisines": [
@@ -439,114 +195,9 @@
           "Italian"
         ],
         "avgRating": 4.5,
-        "parentId": "3220",
-        "avgRatingString": "4.5",
-        "totalRatingsString": "10K+",
-        "sla": {
-          "deliveryTime": 25,
-          "lastMileTravel": 1.2,
-          "serviceability": "SERVICEABLE",
-          "slaString": "20-25 mins",
-          "lastMileTravelString": "1.2 km",
-          "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-          "nextCloseTime": "2024-10-09 01:00:00",
-          "opened": true
-        },
-        "badges": {
-          "imageBadges": [
-            {
-              "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png",
-              "description": "Delivery!"
-            },
-            {
-              "imageId": "Rxawards/_CATEGORY-Gourmet.png",
-              "description": "Delivery!"
-            },
-            {
-              "imageId": "newg.png",
-              "description": "Gourmet"
-            }
-          ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-          "entityBadges": {
-            "imageBased": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "Delivery!",
-                    "imageId": "Green%20Dot%20Awards/Best%20In%20Desserts.png"
-                  }
-                },
-                {
-                  "attributes": {
-                    "description": "Delivery!",
-                    "imageId": "Rxawards/_CATEGORY-Gourmet.png"
-                  }
-                },
-                {
-                  "attributes": {
-                    "description": "Gourmet",
-                    "imageId": "newg.png"
-                  }
-                }
-              ]
-            },
-            "textBased": {
-              
-            },
-            "textExtendedBadges": {
-              
-            }
-          }
-        },
-        "loyaltyDiscoverPresentationInfo": {
-          "logoCtx": {
-            "text": "BENEFITS",
-            "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
-          },
-          "freedelMessage": "FREE DELIVERY"
-        },
-        "differentiatedUi": {
-          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          "differentiatedUiMediaDetails": {
-            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-            "lottie": {
-              
-            },
-            "video": {
-              
-            }
-          }
-        },
-        "reviewsSummary": {
-          
-        },
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {
-          
-        },
-        "externalRatings": {
-          "aggregatedRating": {
-            "rating": "4.3",
-            "ratingCount": "4.2K+"
-          },
-          "source": "GOOGLE",
-          "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-      },
-      "analytics": {
-        
-      },
-      "cta": {
-        "link": "https://www.swiggy.com/city/bangalore/glens-bakehouse-koramangala-rest125956",
-        "type": "WEBLINK"
+        "noOfRatings": "1.4K+"
       }
+      
     },
     {
       "info": {
@@ -554,6 +205,7 @@
         "name": "Soul Rasa",
         "cloudinaryImageId": "xoth5ysuv2r6ctizaso5",
         "locality": "Jakkasandra",
+        "deliveryTime": "55mins",
         "image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹400 for two",
@@ -564,112 +216,7 @@
           "South Indian"
         ],
         "avgRating": 4.6,
-        "parentId": "239281",
-        "avgRatingString": "4.6",
-        "totalRatingsString": "8.5K+",
-        "sla": {
-          "deliveryTime": 29,
-          "lastMileTravel": 2.3,
-          "serviceability": "SERVICEABLE",
-          "slaString": "25-30 mins",
-          "lastMileTravelString": "2.3 km",
-          "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-          "nextCloseTime": "2024-10-08 23:30:00",
-          "opened": true
-        },
-        "badges": {
-          "imageBadges": [
-            {
-              "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
-              "description": "OnlyOnSwiggy"
-            }
-          ],
-          "textExtendedBadges": [
-            {
-              "iconId": "guiltfree/GF_Logo_android_3x",
-              "shortDescription": "brand",
-              "fontColor": "#7E808C"
-            }
-          ]
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-          "entityBadges": {
-            "imageBased": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "OnlyOnSwiggy",
-                    "imageId": "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
-                  }
-                }
-              ]
-            },
-            "textBased": {
-              
-            },
-            "textExtendedBadges": {
-              "badgeObject": [
-                {
-                  "attributes": {
-                    "description": "",
-                    "fontColor": "#7E808C",
-                    "iconId": "guiltfree/GF_Logo_android_3x",
-                    "shortDescription": "brand"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        "aggregatedDiscountInfoV3": {
-          "header": "60% OFF",
-          "subHeader": "UPTO ₹110",
-          "discountTag": "POCKET HERO"
-        },
-        "loyaltyDiscoverPresentationInfo": {
-          "logoCtx": {
-            "text": "BENEFITS",
-            "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
-          },
-          "freedelMessage": "FREE DELIVERY"
-        },
-        "differentiatedUi": {
-          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          "differentiatedUiMediaDetails": {
-            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-            "lottie": {
-              
-            },
-            "video": {
-              
-            }
-          }
-        },
-        "reviewsSummary": {
-          
-        },
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {
-          
-        },
-        "externalRatings": {
-          "aggregatedRating": {
-            "rating": "--"
-          }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-      },
-      "analytics": {
-        
-      },
-      "cta": {
-        "link": "https://www.swiggy.com/city/bangalore/soul-rasa-jakkasandra-koramangala-rest410683",
-        "type": "WEBLINK"
-      }
+        "noOfRatings": "1K+"}
     },
     {
       "info": {
@@ -680,6 +227,7 @@
         "image":"https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹150 for two",
+        "deliveryTime": "60mins",
         "cuisines": [
           "Bakery",
           "Beverages",
@@ -699,99 +247,7 @@
           "North Indian"
         ],
         "avgRating": 4.2,
-        "parentId": "289265",
-        "avgRatingString": "4.2",
-        "totalRatingsString": "26",
-        "sla": {
-          "deliveryTime": 30,
-          "lastMileTravel": 1,
-          "serviceability": "SERVICEABLE",
-          "slaString": "30-35 mins",
-          "lastMileTravelString": "1.0 km",
-          "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-          "nextCloseTime": "2024-10-08 23:00:00",
-          "opened": true
-        },
-        "badges": {
-          
-        },
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-          "entityBadges": {
-            "imageBased": {
-              
-            },
-            "textBased": {
-              
-            },
-            "textExtendedBadges": {
-              
-            }
-          }
-        },
-        "aggregatedDiscountInfoV3": {
-          "header": "₹125 OFF",
-          "subHeader": "ABOVE ₹299",
-          "discountTag": "FLAT DEAL"
-        },
-        "loyaltyDiscoverPresentationInfo": {
-          "logoCtx": {
-            "text": "BENEFITS",
-            "logo": "v1634558776/swiggy_one/OneLogo_3x.png"
-          },
-          "freedelMessage": "FREE DELIVERY"
-        },
-        "differentiatedUi": {
-          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-          "differentiatedUiMediaDetails": {
-            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-            "lottie": {
-              
-            },
-            "video": {
-              
-            }
-          }
-        },
-        "reviewsSummary": {
-          
-        },
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {
-          
-        },
-        "externalRatings": {
-          "aggregatedRating": {
-            "rating": "--"
-          }
-        },
-        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-      },
-      "analytics": {
-        
-      },
-      "cta": {
-        "link": "https://www.swiggy.com/city/bangalore/peppy-parathas-and-rolls-by-chai-point-kora-6th-block-koramangala-rest481779",
-        "type": "WEBLINK"
-      }
-    },
-    {
-      "info": {
-        "id": "426776",
-        "name": "Theobroma",
-        "locality": "7th Block",
-        "image":"https://www.themealdb.com/images/media/meals/1548772327.jpg",
-        "areaName": "Koramangala",
-        "costForTwo": "₹400 for two",
-        "cuisines": [
-          "Desserts",
-          "Bakery",
-          "Beverages"
-        ],
-        "avgRating": 4.7}
+        "noOfRatings": "2.1K+"}
     },
     {
       "info": {
@@ -800,6 +256,7 @@
         "locality": "Koramangala",
         "image":"https://www.themealdb.com/images/media/meals/1520084413.jpg",
         "areaName": "Koramangala",
+        "deliveryTime": "45mins",
         "costForTwo": "₹400 for two",
         "cuisines": [
           "Beverages",
@@ -809,7 +266,8 @@
           "Bakery",
           "Ice Cream"
         ],
-        "avgRating": 4.5}
+        "avgRating": 4.5,
+      "noOfRatings": "2.4K+"}
     },
     {
       "info": {
@@ -819,6 +277,7 @@
         "image": "https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg",
         "areaName": "Kormangala",
         "costForTwo": "₹250 for two",
+        "deliveryTime": "35mins",
         "cuisines": [
           "Bakery",
           "Beverages",
@@ -832,6 +291,7 @@
           "Sweets"
         ],
         "avgRating": 4.5,
+        "noOfRatings": "1.4K+",
         "veg": true}   
     },
     {
@@ -842,13 +302,15 @@
         "image":"https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹300 for two",
+        "deliveryTime": "35mins",
         "cuisines": [
           "Bakery",
           "Desserts",
           "Beverages",
           "Snacks"
         ],
-        "avgRating": 4.5
+        "avgRating": 4.5,
+        "noOfRatings": "2.1K+"
       }
     },
     {
@@ -859,12 +321,14 @@
         "image": "https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹300 for two",
+        "deliveryTime": "35mins",
         "cuisines": [
           "Mexican",
           "Fast Food",
           "Snacks"
         ],
-        "avgRating": 4.3
+        "avgRating": 4.3,
+        "noOfRatings": "2.1K+"
       }
        
     },
@@ -876,6 +340,7 @@
         "image": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹300 for two",
+        "deliveryTime": "35mins",
         "cuisines": [
           "American",
           "Snacks",
@@ -884,8 +349,7 @@
           "Continental"
         ],
         "avgRating": 4.5,
-        "parentId": "371281",
-        "avgRatingString": "4.5"}     
+       "noOfRatings": "1.1K+"}     
     
     }
   ]
