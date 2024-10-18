@@ -143,6 +143,22 @@
   color:var(--text-color1);
   font-weight: 500;
 }
+.promoted{
+padding: 7px;
+    position: absolute;
+    background: black;
+    color: white;
+    border-top-radius: 20px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 2;
+    top: 24px;
+}
+.res-menu{
+  position: relative;
+}
 /* Styles for restaurant menu component */
 .breadcrumbs-list{
   padding-left: 0;

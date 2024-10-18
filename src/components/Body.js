@@ -1,6 +1,6 @@
 
 import useOnlineStatus from "../utils/Custom-Hooks/useOnlineStatus";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {PromotedRestaurantCard} from "./RestaurantCard";
 import {Shimmer} from "./Shimmer";
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
@@ -12,6 +12,7 @@ const Body=()=>{
    let [showTopRes, setShowTopRes] = useState(true);
    let [searchText, setSearchText] =useState("");
    let [sortedRes, setSortedRes] = useState([]);
+   const PromotedRes = PromotedRestaurantCard(RestaurantCard)
     useEffect(()=>{
         fetchData();
     },[]);
@@ -99,7 +100,8 @@ if(selectedValue==='lowToHigh'){
             
             {   
                 filteredRestaurants.length===0 ? (<div className="no-search-results font-24 font-family-Gilroy">No such results found</div>):
-                filteredRestaurants.map((restaurant) =>(<Link className="res-menu text-color-decoration" to={'restaurants/'+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>))
+                filteredRestaurants.map((restaurant) =>(<Link className="res-menu text-color-decoration" to={'restaurants/'+restaurant.info.id}>{
+                  restaurant.info.promoted ? <PromotedRes resData={restaurant}/> :<RestaurantCard key={restaurant.info.id} resData={restaurant}/>}</Link>))
             }
          </div> 
         </div>

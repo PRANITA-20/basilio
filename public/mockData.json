@@ -8,6 +8,7 @@
         "deliveryTime": "35mins",
         "areaName": "Koramangala",
         "costForTwo": "₹250 for two",
+        "promoted":true,
         "cuisines": [
           "Continental",
           "Chinese",
@@ -31,6 +32,7 @@
         "areaName": "Koramangala",
         "deliveryTime": "40mins",
         "costForTwo": "₹350 for two",
+        "promoted":false,
         "cuisines": [
           "Salads",
           "Snacks",
@@ -48,6 +50,7 @@
         "locality": "5th Block",
         "image": "https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg",
         "areaName": "Koramangala",
+        "promoted":true,
         "deliveryTime": "55mins",
         "costForTwo": "₹400 for two",
         "cuisines": [
@@ -67,6 +70,7 @@
         "image": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
         "locality": "Chikka Lakshmaiah Layout",
         "areaName": "Adugodi",
+        "promoted": false,
         "deliveryTime": "23mins",
         "costForTwo": "₹250 for two",
         "cuisines": [
@@ -87,6 +91,7 @@
         "locality": "7th Block",
         "areaName": "Koramangla",
         "deliveryTime": "33mins",
+        "promoted":true,
         "costForTwo": "₹400 for two",
         "cuisines": [
           "Burgers",
@@ -106,6 +111,7 @@
         "areaName": "Koramangala",
         "deliveryTime": "50mins",
         "costForTwo": "₹300 for two",
+        "promoted":false,
         "cuisines": [
           "Biryani",
           "Pan-Asian",
@@ -148,6 +154,7 @@
         "areaName": "Koramangala",
         "deliveryTime": "35mins",
         "costForTwo": "₹200 for two",
+        "promoted":false,
         "cuisines": [
           "North Indian",
           "Biryani",
@@ -166,6 +173,7 @@
         "image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
         "locality": "The Nexus Mall",
         "areaName": "Koramangala",
+        "promoted":true,
         "deliveryTime": "25mins",
         "costForTwo": "₹350 for two",
         "cuisines": [
@@ -185,6 +193,7 @@
         "locality": "Koramangala",
         "areaName": "Koramangala",
         "deliveryTime": "30mins",
+        "promoted":true,
         "image":"https://www.themealdb.com/images/media/meals/ruwpww1511817242.jpg",
         "costForTwo": "₹500 for two",
         "cuisines": [
@@ -209,6 +218,7 @@
         "image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹400 for two",
+        "promoted":false,
         "cuisines": [
           "Indian",
           "Healthy Food",
@@ -223,7 +233,7 @@
         "id": "481779",
         "name": "Peppy Parathas & Rolls By Chai Point",
         "cloudinaryImageId": "nt8lhwoifrmhphfiomjs",
-        "locality": "Kora 6th block",
+        "locality": "Kora 6th block","promoted":false,
         "image":"https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹150 for two",
@@ -257,6 +267,7 @@
         "image":"https://www.themealdb.com/images/media/meals/1520084413.jpg",
         "areaName": "Koramangala",
         "deliveryTime": "45mins",
+        "promoted":false,
         "costForTwo": "₹400 for two",
         "cuisines": [
           "Beverages",
@@ -278,6 +289,7 @@
         "areaName": "Kormangala",
         "costForTwo": "₹250 for two",
         "deliveryTime": "35mins",
+        "promoted":false,
         "cuisines": [
           "Bakery",
           "Beverages",
@@ -301,7 +313,7 @@
         "locality": "1st Block",
         "image":"https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg",
         "areaName": "Koramangala",
-        "costForTwo": "₹300 for two",
+        "costForTwo": "₹300 for two","promoted":false,
         "deliveryTime": "35mins",
         "cuisines": [
           "Bakery",
@@ -322,6 +334,7 @@
         "areaName": "Koramangala",
         "costForTwo": "₹300 for two",
         "deliveryTime": "35mins",
+        "promoted":true,
         "cuisines": [
           "Mexican",
           "Fast Food",
@@ -340,6 +353,7 @@
         "image": "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
         "areaName": "Koramangala",
         "costForTwo": "₹300 for two",
+        "promoted":false,
         "deliveryTime": "35mins",
         "cuisines": [
           "American",

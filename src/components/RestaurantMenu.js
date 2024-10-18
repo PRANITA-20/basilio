@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
-import { Shimmer } from "./Shimmer";
 import useRestaurantInfo from "../utils/Custom-Hooks/useRestaurantInfo";
+import { ShimmerForAbout } from "./ShimmerForAbout";
 
 const RestaurantMenu = ()=>{
     const {resId} = useParams();
@@ -20,7 +20,7 @@ const RestaurantMenu = ()=>{
     }
   console.log(resInfo)
 if(!resInfo){
-    return <Shimmer/>
+    return <ShimmerForAbout/>
 }
 return (
     <>
